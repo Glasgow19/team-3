@@ -8,4 +8,8 @@
     <string name="signup_login">Don\'t have an account?</string>
     <string name="guest_login">Login as a guest</string>
     <string name="forgot_password_login">Forgot your password?</string>
+    <string name="title_activity_homepage">homepage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Explore</string>
+    <string name="title_notifications">Vote</string>
 </resources>
