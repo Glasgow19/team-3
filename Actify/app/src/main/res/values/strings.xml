@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Actify</string>
+    <string name="logo_text">ACTIFY</string>
+    <string name="email_hint_login">Email</string>
+    <string name="password_hint_login">Password</string>
+    <string name="submit_login">Submit</string>
+    <string name="logo_description">Logo of Actify Organisation</string>
+    <string name="signup_login">Don\'t have an account?</string>
+    <string name="guest_login">Login as a guest</string>
+    <string name="forgot_password_login">Forgot your password?</string>
 </resources>
