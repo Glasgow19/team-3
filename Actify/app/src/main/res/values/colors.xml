@@ -8,4 +8,5 @@
     <color name="actify_white">#FFFFFF</color>
     <color name="actify_dark_grey">#656565</color>
     <color name="actify_light_grey">#D0D3D3</color>
+    <color name="actify_event_date">#D83131</color>
 </resources>
