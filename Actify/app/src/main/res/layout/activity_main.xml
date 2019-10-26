@@ -80,9 +80,9 @@
         android:textAlignment="center"
         android:textColor="@color/actify_light_grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="527dp" />
+        tools:layout_editor_absoluteY="512dp" />
 
     <EditText
         android:id="@+id/guest_login"
@@ -95,7 +95,24 @@
         android:textAlignment="center"
         android:textColor="@color/actify_light_grey"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="465dp" />
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <EditText
+        android:id="@+id/forgot_password_login"
+        style="@style/Actify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/forgot_password_login"
+        android:textAlignment="center"
+        android:textColor="@color/actify_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="590dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
