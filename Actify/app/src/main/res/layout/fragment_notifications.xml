@@ -7,7 +7,7 @@
     android:background="@color/actify_white">
 
     <TextView
-        android:id="@+id/question_vote"
+        android:id="@+id/voteQuestionText"
         style="@style/Actify"
         android:layout_width="363dp"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/button_vote"
+        android:id="@+id/voteYesButton"
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginStart="150dp"
@@ -35,10 +35,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question_vote" />
+        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText" />
 
     <Button
-        android:id="@+id/button_2_vote"
+        android:id="@+id/voteNoButton"
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginStart="150dp"
@@ -51,7 +51,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_vote" />
+        app:layout_constraintTop_toBottomOf="@+id/voteYesButton" />
 
     <ImageView
         android:id="@+id/imageView2"
