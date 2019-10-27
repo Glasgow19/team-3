@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
-        if (currentUser.toString() != null){
-            Log.w(TAG, "not a new in user")
-            updateUI(currentUser)
-        }
+//        val currentUser = auth.currentUser
+//        if (currentUser.toString() != null){
+//            Log.w(TAG, "not a new in user")
+//            updateUI(currentUser)
+//        }
 
     }
 
@@ -54,6 +54,14 @@ class MainActivity : AppCompatActivity() {
         Log.w(TAG, "loged in user")
         // Create an Intent to start the second activity
         val randomIntent = Intent(this, homepage::class.java)
+        // Start the new activity.
+        startActivity(randomIntent)
+    }
+
+    private fun questions(user: FirebaseUser?) {
+        Log.w(TAG, "asking user for questions")
+        // Create an Intent to start the second activity
+        val randomIntent = Intent(this, questionaire::class.java)
         // Start the new activity.
         startActivity(randomIntent)
     }
@@ -66,8 +74,7 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInAnonymously:success")
                     val user = auth.currentUser
-                    updateUI(user)
-
+                    questions(user)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInAnonymously:failure", task.exception)
