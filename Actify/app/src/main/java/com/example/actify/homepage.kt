@@ -17,6 +17,8 @@ import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.google.firebase.firestore.SetOptions
+
 //import sun.jvm.hotspot.utilities.IntArray
 
 
@@ -80,22 +82,20 @@ open class homepage : AppCompatActivity() {
         // Create a new answer
         Log.d(TAG, user)
 
-        val surveyanswers = db.collection("survey").document("answers")
+//        val surveyanswers = db.collection("survey").document("answers")
 
         val answer = hashMapOf(
-            "question" to question,
-            "answer" to answer,
-            "user" to user
+            question to answer
         )
 
-        // Add a new document with a generated ID
-        db.collection("surveyanswers")
-            .add(answer)
+        db.collection("surveyanswers").document(user)
+            .set(answer, SetOptions.merge())
             .addOnSuccessListener { Log.d(TAG, "Added submitted answer to answers")
-            }
+        }
             .addOnFailureListener { Log.w(TAG, "Error adding document")
             }
-        // [END add_ada_lovelace]
+
+
     }
 
 
