@@ -43,7 +43,10 @@
                 android:layout_marginEnd="15dp"
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_light_grey">
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="gotoevent"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -53,6 +56,10 @@
                 android:layout_marginEnd="15dp"
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_blue">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="gotoevent"/>
             </androidx.cardview.widget.CardView>
 
 
@@ -64,7 +71,10 @@
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_dark_grey">
 
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="gotoevent"/>
             </androidx.cardview.widget.CardView>
 
 
@@ -106,7 +116,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="NAME"
+                        android:text="ACTIFY"
                         android:textColor="@color/actify_dark_grey"
                         android:textSize="18sp" />
                     <TextView
@@ -114,14 +124,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="PLACE"
+                        android:text="45 Waterloo Street, Glasgow, G2 6HS"
                         android:textColor="@color/actify_dark_grey" />
                     <TextView
                         android:id="@+id/txtGravity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="TIME"
+                        android:text="1800-2200 27/10/2019"
                         android:textColor="@color/actify_dark_grey" />
                 </LinearLayout>
 
@@ -145,7 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="NAME"
+                        android:text="Bournemouth Marathon"
                         android:textColor="@color/actify_dark_grey"
                         android:textSize="18sp" />
                     <TextView
@@ -153,14 +163,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="PLACE"
+                        android:text="Bournemouth"
                         android:textColor="@color/actify_dark_grey" />
                     <TextView
                         android:id="@+id/txtGravity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="TIME"
+                        android:text="0900-1400 05/10/2019"
                         android:textColor="@color/actify_dark_grey" />
                 </LinearLayout>
 
@@ -184,7 +194,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="NAME"
+                        android:text="RT24 Coach Training: Scotland"
                         android:textColor="@color/actify_dark_grey"
                         android:textSize="18sp" />
                     <TextView
@@ -192,14 +202,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="PLACE"
+                        android:text="Chris Bowman Fitness, 215 E Clyde St"
                         android:textColor="@color/actify_dark_grey" />
                     <TextView
                         android:id="@+id/txtGravity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="TIME"
+                        android:text="0900-1000 27/10/2019"
                         android:textColor="@color/actify_dark_grey" />
                 </LinearLayout>
 
@@ -224,7 +234,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="NAME"
+                        android:text="Essex Season Ender"
                         android:textColor="@color/actify_dark_grey"
                         android:textSize="18sp" />
                     <TextView
@@ -232,14 +242,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="PLACE"
+                        android:text="IIford"
                         android:textColor="@color/actify_dark_grey" />
                     <TextView
                         android:id="@+id/txtGravity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="TIME"
+                        android:text="1000-1500 17/11/2019"
                         android:textColor="@color/actify_dark_grey" />
                 </LinearLayout>
 
