@@ -1,136 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/actify_white">
 
-    <TextView
-        android:id="@+id/title_event"
-        style="@style/Actify"
-        android:layout_width="0dp"
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/event_title"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:text="Username"
         android:textAlignment="center"
-        android:textColor="@color/actify_light_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="181dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="@string/event_picture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_event"
-        app:srcCompat="@drawable/actify_logo" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="361dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="240dp">
 
-    <TextView
-        android:id="@+id/date_number_event"
-        style="@style/Event_Date"
-        android:text="@string/date_number_event"
-        android:textColor="@color/actify_dark_grey"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Dark Mode" />
 
-    <TextView
-        android:id="@+id/date_month_event"
-        style="@style/Event_Date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/event_month"
-        android:textColor="@color/actify_blue"
-        app:layout_constraintStart_toEndOf="@+id/date_number_event"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Change Username"
+            android:textColor="#000000"
+            android:gravity="center_vertical"/>
 
-    <TextView
-        android:id="@+id/time_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/event_time"
-        android:textColor="@color/actify_dark_grey"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_number_event" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Change Password"
+            android:textColor="#000000"
+            android:gravity="center_vertical"/>
 
-    <TextView
-        android:id="@+id/event_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/event_location"
-        android:textColor="@color/actify_dark_grey"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time_event" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Settings"
+            android:textColor="#090000"
+            android:gravity="center_vertical"/>
 
-    <TextView
-        android:id="@+id/description_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/description_event"
-        android:textColor="@color/actify_blue"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_date" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="370dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/event_description"
-        android:textColor="@color/actify_dark_grey"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_event" />
-
-    <ImageButton
-        android:id="@+id/ignore_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="50dp"
-        android:background="@color/actify_white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@android:drawable/ic_delete" />
-
-    <ImageButton
-        android:id="@+id/question_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/actify_white"
-        app:layout_constraintEnd_toStartOf="@+id/ignore_event"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@android:drawable/ic_menu_help" />
-
-    <ImageButton
-        android:id="@+id/add_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/actify_white"
-        app:layout_constraintEnd_toStartOf="@+id/question_event"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:textColor="#030101" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
