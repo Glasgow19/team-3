@@ -31,6 +31,17 @@
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_orange">
 
+                <TextView
+                    android:id="@+id/txtName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="ACTIVE SCOTLAND"
+                    android:textAlignment="center"
+                    android:textColor="@color/actify_dark_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -41,6 +52,17 @@
                 android:padding="5dp"
                 android:onClick="gotoevent"
                 card_view:cardBackgroundColor="@color/actify_light_grey">
+
+                <TextView
+                    android:id="@+id/txtName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="THRIVE"
+                    android:textAlignment="center"
+                    android:textColor="@color/actify_dark_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -51,6 +73,17 @@
                 android:padding="5dp"
                 android:onClick="gotoevent"
                 card_view:cardBackgroundColor="@color/actify_blue">
+
+                <TextView
+                    android:id="@+id/txtName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="BASKET-IT"
+                    android:textAlignment="center"
+                    android:textColor="@color/actify_dark_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
 
