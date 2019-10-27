@@ -96,14 +96,6 @@ open class homepage : AppCompatActivity() {
             }
 
 
-//        // Add a new document with a generated ID
-//        db.collection("surveyanswers")
-//            .add(answer)
-//            .addOnSuccessListener { Log.d(TAG, "Added submitted answer to answers")
-//            }
-//            .addOnFailureListener { Log.w(TAG, "Error adding document")
-//            }
-        // [END add_ada_lovelace]
     }
 
 

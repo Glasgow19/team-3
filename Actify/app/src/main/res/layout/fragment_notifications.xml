@@ -33,6 +33,7 @@
         android:text="@string/yes"
         android:textColor="@color/actify_dark_grey"
         android:textSize="18sp"
+        android:onClick="voteButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/voteQuestionText" />
@@ -49,6 +50,7 @@
         android:textAlignment="center"
         android:textColor="@color/actify_dark_grey"
         android:textSize="18sp"
+        android:onClick="voteButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/voteYesButton" />
