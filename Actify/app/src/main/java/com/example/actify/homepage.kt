@@ -68,6 +68,14 @@ open class homepage : AppCompatActivity() {
 
     }
 
+    fun gotoprofile(view:View){
+
+        val randomIntent = Intent(this, profile::class.java)
+        // Start the new activity.
+        startActivity(randomIntent)
+
+    }
+
 
     private fun setUser(){
         if (FirebaseAuth.getInstance().currentUser != null){
