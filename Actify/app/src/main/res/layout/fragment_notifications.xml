@@ -22,33 +22,36 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/voteYesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="196dp"
         android:text="YES"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText"
+        android:onClick="voteButton"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/voteNoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="196dp"
         android:layout_marginEnd="68dp"
         android:text="No"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText"
+        android:onClick="voteButton"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/voteQuestionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="QUESTION!"
+        android:text="This is a  question lorem why ipsum!"
         app:layout_constraintEnd_toEndOf="@+id/text_notifications"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_notifications" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
