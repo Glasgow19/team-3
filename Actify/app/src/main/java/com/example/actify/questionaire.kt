@@ -60,11 +60,11 @@ class questionaire : AppCompatActivity() {
         Log.d(TAG, "adding the questions")
 
         val answer = hashMapOf(
-            "Age" to answer1,
+            "Age" to Integer.parseInt(answer1),
             "Address" to answer2,
             "Goal" to answer3,
             "Activities" to answer4,
-            "Physical" to answer5,
+            "Physical" to Integer.parseInt(answer5),
             "Disability" to answer6
         )
 
