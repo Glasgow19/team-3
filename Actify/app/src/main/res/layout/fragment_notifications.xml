@@ -3,55 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    //vote page
-
-    <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/voteYesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="196dp"
-        android:text="YES"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText"
-        android:onClick="voteButton"/>
-
-    <Button
-        android:id="@+id/voteNoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="68dp"
-        android:text="No"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText"
-        android:onClick="voteButton"/>
+    android:layout_height="match_parent"
+    android:background="@color/actify_white">
 
     <TextView
         android:id="@+id/voteQuestionText"
-        android:layout_width="wrap_content"
+        style="@style/Actify"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
-        android:text="This is a  question lorem why ipsum!"
-        app:layout_constraintEnd_toEndOf="@+id/text_notifications"
-        app:layout_constraintHorizontal_bias="0.51"
+        android:layout_marginEnd="16dp"
+        android:text="@string/question_vote_2"
+        android:textAlignment="center"
+        android:textColor="@color/actify_light_grey"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_notifications" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/voteYesButton"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="150dp"
+        android:background="@color/actify_blue"
+        android:text="@string/yes"
+        android:textColor="@color/actify_dark_grey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voteQuestionText" />
+
+    <Button
+        android:id="@+id/voteNoButton"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="150dp"
+        android:background="@color/actify_blue"
+        android:text="@string/No"
+        android:textAlignment="center"
+        android:textColor="@color/actify_dark_grey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voteYesButton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="342dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actify_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
