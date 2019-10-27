@@ -49,4 +49,13 @@
     <string name="question_vote_2">Did you go for a jog in the last 5 days?</string>
     <string name="yes">yes</string>
     <string name="No">No</string>
+    <string name="signup_age">Age</string>
+    <string name="signup_address">PostCode</string>
+    <string name="signup_physical">How would you rate your physical activity in the past 6 months?</string>
+    <string name="signup_activity">Favourite Activity</string>
+    <string name="signup_goal">What is your Goal</string>
+    <string name="signup_goal_1">Get fit and healthy</string>
+    <string name="signup_goal_2">Lose Weight</string>
+    <string name="signup_goal_3">Other Reason</string>
+    <string name="signup_disability">Any Disabilities?</string>
 </resources>
