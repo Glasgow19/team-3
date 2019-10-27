@@ -29,7 +29,10 @@
                 android:layout_marginEnd="15dp"
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_white">
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="gotoevent"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -40,7 +43,6 @@
                 android:layout_marginEnd="15dp"
                 android:padding="5dp"
                 card_view:cardBackgroundColor="@color/actify_light_grey">
-
 
             </androidx.cardview.widget.CardView>
 
@@ -97,7 +99,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="gotoevent">
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="match_parent"
@@ -135,7 +138,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="gotoevent">
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="match_parent"
@@ -173,7 +177,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="gotoevent">
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="match_parent"
@@ -212,7 +217,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="gotoevent">
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="match_parent"
