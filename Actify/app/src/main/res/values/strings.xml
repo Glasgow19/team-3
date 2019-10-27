@@ -24,6 +24,13 @@
         responsible for developing new.</string>
     <string name="going_event">Going</string>
     <string name="event_picture">Picture of event</string>
+    <string name="explore_hint">Search for events</string>
+    <string name="add_event_title">Title</string>
+    <string name="add_event_date">Date</string>
+    <string name="add_event_time">Time</string>
+    <string name="add_event_description">Description</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="add_event_quote">Create your event</string>
     <string name="title_activity_homepage">homepage</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Explore</string>
