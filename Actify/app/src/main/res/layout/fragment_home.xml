@@ -27,9 +27,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="15dp"
-                android:padding="5dp"
                 android:onClick="gotoevent"
-                card_view:cardBackgroundColor="@color/actify_white">
+                android:padding="5dp"
+                card_view:cardBackgroundColor="@color/actify_orange">
 
             </androidx.cardview.widget.CardView>
 
@@ -248,7 +248,8 @@
         android:layout_height="40dp"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
-        android:text="Your events"
+        android:text="Trending Activities"
+        android:textColor="@color/actify_dark_grey"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintVertical_bias="0.0"

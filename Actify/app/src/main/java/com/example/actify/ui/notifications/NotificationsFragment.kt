@@ -23,6 +23,7 @@ class NotificationsFragment : Fragment() {
             ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_notifications, container, false)
         notificationsViewModel.text.observe(this, Observer {
+
         })
         return root
     }
