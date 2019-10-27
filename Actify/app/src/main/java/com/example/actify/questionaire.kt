@@ -14,6 +14,10 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_questionaire.*
+import kotlinx.android.synthetic.main.activity_questionaire.answer2
+import kotlinx.android.synthetic.main.activity_questionaire.answer4
+import kotlinx.android.synthetic.main.activity_questionaire.answer6
+import kotlinx.android.synthetic.main.activity_questionaire3.*
 
 
 class questionaire : AppCompatActivity() {
@@ -24,7 +28,7 @@ class questionaire : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_questionaire)
+        setContentView(R.layout.activity_questionaire3)
     }
 
     private fun setUser(){
@@ -44,29 +48,34 @@ class questionaire : AppCompatActivity() {
         val db = FirebaseFirestore.getInstance()     // to access Firebase Firestore Datbase
         setUser()
 
-        val answer1 = findViewById<EditText>(R.id.answer1).text.toString()
-        val answer2 = findViewById<EditText>(R.id.answer2).text.toString()
-        val answer3 = findViewById<EditText>(R.id.answer3).text.toString()
-        val answer4 = findViewById<EditText>(R.id.answer4).text.toString()
-        val answer6 = findViewById<EditText>(R.id.answer6).text.toString()
+        val age = findViewById<EditText>(R.id.answer1).text.toString()
+        val postcode = findViewById<EditText>(R.id.answer2).text.toString()
+        val activity = findViewById<EditText>(R.id.answer4).text.toString()
+        val goal = findViewById<EditText>(R.id.answer5).text.toString()
+        val disability = findViewById<EditText>(R.id.answer6).text.toString()
+
+
 
         // Get the selected radio button text using radio button on click listener
         // Get the clicked radio button instance
-        val radio: RadioButton = findViewById(radio_groupq5.checkedRadioButtonId)
+        val radio: RadioButton = findViewById(radio_button.checkedRadioButtonId)
         Log.d(TAG, radio.text.toString())
-        val answer5 = radio.text.toString()
+//        val answer3 = radio.text.toString()
+        val physical = radio.text.toString()
 
 
         Log.d(TAG, "adding the questions")
 
         val answer = hashMapOf(
-            "Age" to Integer.parseInt(answer1),
-            "Address" to answer2,
-            "Goal" to answer3,
-            "Activities" to answer4,
-            "Physical" to Integer.parseInt(answer5),
-            "Disability" to answer6
+            "Age" to Integer.parseInt(age),
+            "Address" to postcode,
+            "Physical" to Integer.parseInt(physical),
+            "Activities" to activity,
+            "Goal" to goal,
+            "Disability" to disability
         )
+        Log.d(TAG, answer.toString())
+
 
         db.collection("surveyanswers").document(user)
             .set(answer, SetOptions.merge())

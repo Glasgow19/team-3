@@ -1,185 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".questionaire"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:id="@+id/relativeLayout">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/rl_gender"
-        android:layout_below="@+id/rl_lname"
-        android:layout_marginTop="10dp">
+        android:text="What is your goal?"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
 
-        <TextView
-            android:id="@+id/question3"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="What is your goal?" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer3"
-            android:layout_toRightOf="@+id/question3"
-            />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/rl_lname"
-        android:layout_below="@+id/rl_fname"
-        android:layout_marginTop="10dp">
+        android:id="@+id/answer3"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_editor_absoluteY="119dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="242dp" />
 
-        <TextView
-            android:id="@+id/question2"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="Address" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer2"
-            android:layout_toRightOf="@+id/question2"
-            />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/active"
-        android:layout_below="@+id/rl_activity"
-        android:layout_marginTop="10dp">
+        android:text="Address"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_editor_absoluteY="77dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
 
-        <TextView
-            android:id="@+id/question5"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="How active do you consider yourself?" />
-
-        <RadioGroup
-            android:id="@+id/radio_groupq5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/question5">
-            <RadioButton
-                android:id="@+id/radioButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text= "1" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2" />
-
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4" />
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-        </RadioGroup>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/rl_activity"
-        android:layout_below="@+id/rl_gender"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:id="@+id/question4"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="What activities do you do?" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer4"
-            android:layout_toRightOf="@+id/question4"
-            />
-
-    </RelativeLayout>
+        android:id="@+id/answer2"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_editor_absoluteY="65dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="242dp" />
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/rl_fname">
+        android:text="How active do you consider yourself?"
+        tools:layout_conversion_absoluteHeight="36dp"
+        tools:layout_editor_absoluteY="291dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
 
-        <TextView
-            android:id="@+id/question1"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="Age" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer1"
-            android:layout_toRightOf="@+id/question1"
-            />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/rl_whynotactive"
-        android:layout_width="match_parent"
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rl_activity"
-        android:layout_marginTop="200dp">
+        android:text="1"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
 
-        <TextView
-            android:id="@+id/question6"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="Does anything prevent you from being physically active?" />
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="261dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
 
-        <EditText
-            android:id="@+id/answer6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/question6" />
-    </RelativeLayout>
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="293dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="357dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
 
 
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What activities do you do?"
+        tools:layout_conversion_absoluteHeight="36dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer4"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_editor_absoluteY="174dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="242dp" />
+
+
+    <TextView
+        android:id="@+id/question6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does anything prevent you from being physically active?"
+        tools:layout_conversion_absoluteHeight="53dp"
+        tools:layout_editor_absoluteY="419dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
+
+    <EditText
+        android:id="@+id/answer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_editor_absoluteY="419dp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_conversion_absoluteWidth="242dp" />
 
 
     <Button
         android:id="@+id/btn_submit"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:onClick="onSubmit"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="36dp"
-        android:text="Submit" />
+        android:text="Submit"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_editor_absoluteY="508dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_conversion_absoluteWidth="392dp" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
