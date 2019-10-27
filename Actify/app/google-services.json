@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "662378295655",
+    "firebase_url": "https://activify-cf1b9.firebaseio.com",
+    "project_id": "activify-cf1b9",
+    "storage_bucket": "activify-cf1b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662378295655:android:d4794ff2b52038a01a3fc2",
+        "android_client_info": {
+          "package_name": "com.example.actify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662378295655-m2sgl1e2fedqpdkj22cc6vrspkratfs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQxIgbIqn9PnlP_cfwrT1Ol6YB4UrstQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662378295655-m2sgl1e2fedqpdkj22cc6vrspkratfs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
